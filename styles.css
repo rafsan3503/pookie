@@ -1,0 +1,157 @@
+/* Add @font-face rule for the To Japan font */
+@font-face {
+    font-family: 'To Japan';
+    src: url('./ToJapan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add a pseudo-element for the shadow overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+body {
+    font-family: 'To Japan', 'Nunito', sans-serif;
+    background-color: #000;
+    color: white;
+    background-image: url('./BG.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+.title-container {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'To Japan', 'Nunito', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pookie-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+}
+
+.highlight {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.quote {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.code {
+    font-size: 0.9rem;
+    color: #999;
+    font-family: monospace;
+    margin-top: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #ff4d4d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 4rem;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+    }
+    
+    .links {
+        justify-content: space-around;
+        gap: 10px;
+    }
+    
+    .link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 3.5rem;
+    }
+} 
