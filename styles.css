@@ -94,6 +94,7 @@ body {
     text-align: left;
     width: 100%;
     max-width: 400px;
+   
 }
 
 .highlight {
@@ -168,22 +169,57 @@ body {
         background-position: center;
     }
     
+    .container {
+        max-width: 850px;
+    }
     
     .title-container {
-        max-width: 500px;
+        max-width: 680px;
+        margin-bottom: 34px;
     }
     
     .title {
-        font-size: 6rem;
+        font-size: 8.5rem;
         -webkit-text-stroke: 2px black;
+        letter-spacing: 3px;
     }
     
+    .image-container {
+        max-width: 680px;
+        margin-bottom: 51px;
+        box-shadow: 0 9px 26px rgba(0, 0, 0, 0.5);
+        border-radius: 34px;
+    }
+    
+    .pookie-image {
+        border: 5px solid black;
+        border-radius: 34px;
+    }
     
     .description {
-        font-size: 16px;
+        font-size: 24px;
+        margin-bottom: 51px;
+        line-height: 1.5;
+        max-width: 680px;
+    }
+    
+    .quote {
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+    
+    .code {
+        font-size: 1.5rem;
+        margin-top: 17px;
+    }
+    
+    .links {
+        max-width: 680px;
+        margin-top: 34px;
     }
     
     .link {
-        font-size: 12px;
+        font-size: 20px;
+        letter-spacing: 2px;
     }
 } 
